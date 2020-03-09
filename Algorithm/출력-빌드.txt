@@ -1,0 +1,6 @@
+﻿1>------ 빌드 시작: 프로젝트: Algorithm, 구성: Debug Win32 ------
+1>baekjoon11399.cpp
+1>d:\mycode\algorithm\algorithm\algorithm\baekjoon11399.cpp(22): warning C4390: ';': 제어된 빈 문이 있습니다. 이 문이 필요합니까?
+1>Algorithm.vcxproj -> D:\MyCode\Algorithm\Algorithm\Debug\Algorithm.exe
+1>"Algorithm.vcxproj" 프로젝트를 빌드했습니다.
+========== 빌드: 성공 1, 실패 0, 최신 0, 생략 0 ==========
