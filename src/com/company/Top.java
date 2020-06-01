@@ -7,20 +7,16 @@ public class Top {
     public int[] solution(int[] heights) {
         int[] answer = new int[heights.length];
 
-        Stack<Integer> stack = new Stack<>();
-        
-        for (int i = 0; i < heights.length; i++) {
-            stack.push(heights[i]);
-        }
-
-        while(stack.empty())
+        for(int i = 0; i < heights.length; i++)
         {
-            for(int j = 0; j < stack.size(); j++)
+            for (int j = i; j >= 0; j--)
             {
-                if(stack.pop() < stack.get(j))
+                if(heights[i] < heights[j])
                 {
-                    answer[j] = j;
+                    answer[i] = j+1;
+                    break;
                 }
+
             }
         }
         return answer;
@@ -28,6 +24,6 @@ public class Top {
 
     public static void main(String[] args) {
         Top top = new Top();
-        top.solution(new int[]{6,9,5,7,4});
+        top.solution(new int[]{3,9,9,3,5,7,2});
     }
 }

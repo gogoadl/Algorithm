@@ -1,27 +1,27 @@
 package com.company;
 
-public class SkillCheck1 {
-    public int solution(int n) {
-        int answer = 0;
+import java.util.ArrayList;
 
-        for(int i = 0; i < n; i++)
-        {
-            int sum = 0;
-            for(int j = i; j < n; j++)
-            {
-                sum += j;
-                if(sum == n)
-                {
-                    answer++;
-                    break;
-                }
-            }
-        }
+public class SkillCheck1 { // 아름다운 연도
+
+    public int solution(String arrangement) {
+        int answer = 0;
         return answer;
     }
 
     public static void main(String[] args) {
-        SkillCheck1 s = new SkillCheck1();
-        System.out.println(s.solution(15));
+
+
+
+
+
+
+        System.out.println(1.0 * -0.0);
+
+
+
+
+
+
     }
 }

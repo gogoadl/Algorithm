@@ -1,0 +1,22 @@
+package com.company;
+
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
+public class BridgeTruck {
+    public int solution(int bridge_length, int weight, int[] truck_weights) {
+        int answer = 0;
+
+        Queue<Integer> queue = new LinkedList<Integer>();
+
+
+
+        return answer;
+    }
+
+    public static void main(String[] args) {
+        BridgeTruck bridgeTruck = new BridgeTruck();
+        bridgeTruck.solution(2,10,new int[]{7,4,5,6});
+    }
+}
