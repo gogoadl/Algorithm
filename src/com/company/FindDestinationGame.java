@@ -13,12 +13,28 @@ public class FindDestinationGame{
             if(root.leftNode == null)
             {
                 root.leftNode = insertNode;
-                searchAndInsert(root.leftNode, insertNode);
             }else
             {
-                
+                searchAndInsert(root.leftNode, insertNode);
             }
-
+        }else
+        {
+            if(root.rightNode == null)
+            {
+                root.rightNode = insertNode;
+            }else
+            {
+                searchAndInsert(root.rightNode, insertNode);
+            }
+        }
+    }
+    public void preorder(Node focusNode)
+    {
+        if(focusNode != null)
+        {
+            preorder(focusNode.leftNode);
+            System.out.println(focusNode.number);
+            preorder(focusNode.rightNode);
         }
     }
     public int[][] solution(int[][] nodeinfo) {
@@ -36,7 +52,10 @@ public class FindDestinationGame{
             }
         });
         Node root = nodearr[0];
-
+        for(int i = 1; i < nodearr.length; i++)
+        {
+            searchAndInsert(root, nodearr[i]);
+        }
 
 
 
