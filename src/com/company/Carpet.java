@@ -29,6 +29,6 @@ public class Carpet {
     }
     public static void main(String[] args) {
         Carpet carpet = new Carpet();
-        carpet.solution(14,4);
+        carpet.solution(18,6);
     }
 }
