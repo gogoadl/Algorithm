@@ -20,12 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c8adcef-e631-4b16-82d5-b48d2bc82f2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/Practice19.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Practice20.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Practice21.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Practice22.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Carpet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/com/company/Carpet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/FindDestinationGame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/com/company/FindDestinationGame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/FindDestinationGame$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/com/company/FindDestinationGame$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/FindDestinationGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/com/company/FindDestinationGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/MoreSpicy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/com/company/MoreSpicy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Carpet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Carpet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/MoreSpicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/MoreSpicy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,22 +56,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.Practice21">
-    <configuration name="Carpet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Carpet" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FindDestinationGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.FindDestinationGame" />
+  <component name="RunManager" selected="Application.Practice22">
+    <configuration name="MoreSpicy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.MoreSpicy" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
@@ -119,13 +109,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Practice22" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Practice22" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Practice22" />
+        <item itemvalue="Application.MoreSpicy" />
         <item itemvalue="Application.Practice21" />
         <item itemvalue="Application.Practice20" />
         <item itemvalue="Application.Practice19" />
-        <item itemvalue="Application.Carpet" />
-        <item itemvalue="Application.FindDestinationGame" />
       </list>
     </recent_temporary>
   </component>
@@ -155,54 +158,54 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1593421512022">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1593509107729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593421512022" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1593421512022">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593509107729" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1593509107729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593421512022" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1593421512021">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593509107729" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1593509107729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593421512021" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1593421512022">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593509107729" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1593509107729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593421512022" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1593421512022">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593509107729" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1593509107729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593421512022" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1593421512022">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593509107729" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1593509107729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1593421512022" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1593421512022">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1593509107729" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1593509107729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1593421512022" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1593421512022">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1593509107729" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1593509107729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1593421512022" />
-    <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1593421512023">
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1593509107729" />
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1593509107729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593421512023" />
-    <state width="1493" height="261" key="GridCell.Tab.2.center" timestamp="1593421512022">
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593509107729" />
+    <state width="1493" height="261" key="GridCell.Tab.2.center" timestamp="1593509107729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1593421512022" />
-    <state width="1493" height="261" key="GridCell.Tab.2.left" timestamp="1593421512022">
+    <state width="1493" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1593509107729" />
+    <state width="1493" height="261" key="GridCell.Tab.2.left" timestamp="1593509107729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1593421512022" />
-    <state width="1493" height="261" key="GridCell.Tab.2.right" timestamp="1593421512023">
+    <state width="1493" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1593509107729" />
+    <state width="1493" height="261" key="GridCell.Tab.2.right" timestamp="1593509107729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1593421512023" />
+    <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1593509107729" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -219,7 +222,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Carpet.java</url>
-          <line>27</line>
+          <line>19</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -256,6 +259,11 @@
           <url>file://$PROJECT_DIR$/src/com/company/Practice21.java</url>
           <line>14</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Practice22.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
