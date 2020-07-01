@@ -3,8 +3,8 @@ package com.company;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
-import java.util.Locale;
 
 public class Solution {
     public String replaceStr(String m)
@@ -18,6 +18,8 @@ public class Solution {
     }
     public String solution(String m, String[] musicinfos) { // 카카오 악보
         String answer = "(None)";
+        ArrayList<String> arrayList = new ArrayList<>();
+
 
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hh:mm");
 
@@ -48,17 +50,23 @@ public class Solution {
                 k++;
             }
             if (str.contains(m1)) {
-
-                answer = s[2];
+                arrayList.add(s[2]);
                 break;
             }
 
         }
-
+            if(arrayList.size() == 0)
+            {
+                return answer;
+            }else
+            {
+                Collections.sort(arrayList);
+                answer = arrayList.get(arrayList.size() - 1);
+            }
         return answer;
     }
     public static void main(String[] args) {
         Solution solution = new Solution();
-        solution.solution("CC#BCC#BCC#BCC#B",new String[]{"03:00,03:30,FOO,CC#B", "04:00,04:08,BAR,CC#BCC#BCC#B"});
+        solution.solution("CC",new String[]{"04:00,04:02,ZERO,B#CC", "15:00,15:02,FIRST,B#CC", "04:04,04:06,SECOND,B#CC", "04:08,04:10,THIRD,B#CC"});
     }
 }
