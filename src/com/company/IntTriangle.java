@@ -3,18 +3,32 @@ package com.company;
 public class IntTriangle {
     public int solution(int[][] triangle) {
         int answer = 0;
-        int[] tmp = triangle[0].clone();
-        for(int i = 0; i < triangle.length - 1; i++)
+
+        for(int i = 1; i < triangle.length; i++)
         {
-
-            int[] arr = new int[triangle[i].length * 2];
-            for(int j = 0; j < arr.length; j++)
+            for (int j = 0; j < triangle[i].length; j++)
             {
-
-                arr[j] = tmp[i] + triangle[i + 1][j];
+                if(j == 0)
+                {
+                    triangle[i][j] += triangle[i - 1][j];
+                }else if ( j == triangle[i].length - 1)
+                {
+                    triangle[i][j] += triangle[i - 1][j - 1];
+                }
+                else
+                {
+                    triangle[i][j] += Math.max(triangle[i - 1][j - 1],triangle[i - 1][j]);
+                }
             }
-            tmp = arr.clone();
         }
+        int max = 0;
+        for(int k = 0; k < triangle[triangle.length - 1].length; k++)
+        {
+            if (triangle[triangle.length - 1][k] > max)
+                max = triangle[triangle.length - 1][k];
+        }
+
+        answer = max;
 
         return answer;
     }
