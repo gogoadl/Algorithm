@@ -1,9 +1,6 @@
 package com.company;
 
-import java.util.Stack;
-
-public class Solution {
-
+public class JadenCase {
     public String solution(String s) {
         String answer = "";
 
@@ -23,10 +20,5 @@ public class Solution {
         answer = String.valueOf(chars);
 
         return answer;
-    }
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        solution.solution("3people unFollowed me");
     }
 }

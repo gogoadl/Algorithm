@@ -18,6 +18,8 @@ public class Practice24 { // 서울에서 김서방 찾기
     public static void main(String[] args) {
         Practice24 practice24 = new Practice24();
         practice24.solution(new String[]{"Jane","Kim"});
+
+
     }
 
 }
