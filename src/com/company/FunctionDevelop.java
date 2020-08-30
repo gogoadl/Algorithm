@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class FunctionDevelop {
     public int[] solution(int[] progresses, int[] speeds) {
-        int[] answer = {};
+        int[] answer;
         ArrayList<Integer> arrayList = new ArrayList();
         ArrayList<Integer> answerList = new ArrayList<>();
         int[] count = new int[progresses.length];

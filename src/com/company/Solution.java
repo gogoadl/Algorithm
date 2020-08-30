@@ -1,32 +1,90 @@
 package com.company;
 
-import java.util.Stack;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Solution {
 
-    public String solution(String s) {
-        String answer = "";
+//    public static void main(String[] args) throws IOException { 3번
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        String input = br.readLine();
+//
+//        String[] strings = input.split(" ");
+//
+//        float gameCount = Integer.parseInt(strings[0]);
+//        float winCount = Integer.parseInt(strings[1]);
+//        float percent = winCount / gameCount * 100;
+//        int count = 0;
+//        int firstPercent = (int)percent;
+//        if(firstPercent >= 99)
+//        {
+//            System.out.print("X");
+//        }else
+//        {
+//            while (true)
+//            {
+//                gameCount++;
+//                winCount++;
+//                percent = winCount / gameCount * 100;
+//                count++;
+//                System.out.println(percent);
+//                if((int)percent >= firstPercent + 1)
+//                    break;
+//                if (count > 10)
+//                    break;
+//            }
+//            System.out.print(count);
+//        }
 
-        s = s.toLowerCase();
+//    }
 
-        char[] chars = s.toCharArray();
-        if(Character.isLetter(chars[0]))
-        {
-            chars[0] = Character.toUpperCase(chars[0]);
-        }
-        for(int i = 1; i < chars.length; i++)
-        {
-            if(chars[i - 1] == ' ')
-                chars[i] = Character.toUpperCase(chars[i]);
-        }
+//    public static void main(String[] args) throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        String input = br.readLine();
+//
+//        String[] strings = input.split(" ");
+//        int A = Integer.parseInt(strings[0]);
+//        int B = Integer.parseInt(strings[1]);
+//
+//        while (B > 0)
+//        {
+//            int temp = A;
+//            A = B;
+//            B = temp % B;
+//        }
+//        System.out.print(A);
+//
+//    }
 
-        answer = String.valueOf(chars);
 
-        return answer;
-    }
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        solution.solution("3people unFollowed me");
-    }
+//   public static Scanner scanner = new Scanner(System.in);
+//
+//    public static void main(String[] args) {
+//        int sh = 9, sm = 38;
+//
+//        int myTime = sh * 60 + sm;
+//        int min = myTime;
+//        int[] bh = new int[]{8,17,21,12,11};
+//        int[] bm = new int[]{32,24,33,43,46};
+//        for(int i = 0; i < bh.length; i++)
+//        {
+//            int temp = bh[i] * 60 + bm[i];
+//
+//            if(bh[i] > sh)
+//            {
+//                if(min > temp - myTime)
+//                    min = temp - myTime;
+//            }else
+//            {
+//                if(min > temp + 1440 - myTime)
+//                {
+//                    min = temp + 1440 - myTime;
+//                }
+//            }
+//
+//        }
+//        System.out.print(min);
+//    }
 }
