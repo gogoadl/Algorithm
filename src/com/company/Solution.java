@@ -1,11 +1,39 @@
 package com.company;
 
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.*;
 
 public class Solution {
+    // 레벨 3 보석 쇼핑 푸는중
+//    public int[] solution(String[] gems) {
+//        int[] answer = new int[2];
+//        int[] ints = new int[gems.length];
+//        PriorityQueue priorityQueue = new PriorityQueue();
+//        HashMap<String, Integer> gemMap = new HashMap<>();
+//        HashSet<String> hs = new HashSet<>();
+//        for (String gem: gems) {
+//            hs.add(gem);
+//        }
+//        int count = 0;
+//        for (int i = 0; i < gems.length; i++) {
+//            if(count == hs.size())
+//                break;
+//            if(gemMap.containsKey(gems[i])) {
+//                gemMap.remove(gems[i]);
+//            }
+//            gemMap.put(gems[i],i);
+//            count++;
+//
+//        }
+//
+//        return answer;
+//    }
+//
+//    public static void main(String[] args) {
+//        Solution solution = new Solution();
+//        solution.solution(new String[]{"dia","ruby","ruby","dia", "dia", "emerald", "sapphire", "dia"});
+//    }
+
 
 //    public static void main(String[] args) throws IOException { 3번
 //        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
