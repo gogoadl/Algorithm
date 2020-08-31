@@ -1,9 +1,16 @@
 package com.company;
 
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class Solution {
+
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        solution.solution("aabbaccc");
+    }
     // 레벨 3 보석 쇼핑 푸는중
 //    public int[] solution(String[] gems) {
 //        int[] answer = new int[2];
