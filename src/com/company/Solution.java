@@ -1,16 +1,41 @@
 package com.company;
 
 
-import java.lang.reflect.Array;
-import java.util.*;
-
 public class Solution {
 
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        solution.solution("aabbaccc");
+    public int[] solution(String[] genres, int[] plays) {
+        int[] answer = {};
+        return answer;
     }
+
+//    public String solution(String number, int k) {
+//        StringBuilder sb = new StringBuilder();
+//
+//        int start = 0;
+//        int end = number.length() - k;
+//        int idx = 0;
+//
+//        while (k >= 1){
+//            int max = -1;
+//            for (int i = start; i < end; i++) {
+//                int num = number.charAt(i) - '0';
+//                if(num > max)
+//                    max = num;
+//                    idx = i;
+//            }
+//            sb.append(max);
+//            start = idx;
+//            k = k - idx + 1;
+//            end = number.length() - k - 1;
+//        }
+//
+//        return sb.toString() + number.substring(start + 1);
+//    }
+
+//    public static void main(String[] args) {
+//        Solution solution = new Solution();
+//        solution.solution(new String[]{"classic"},4);
+//    }
     // 레벨 3 보석 쇼핑 푸는중
 //    public int[] solution(String[] gems) {
 //        int[] answer = new int[2];
