@@ -6,27 +6,40 @@ public class BridgeTruck {
     public int solution(int bridge_length, int weight, int[] truck_weights) {
         int answer = 0;
 
-        Queue<Integer> queue = new LinkedList();
-        ArrayList<Integer> queue1 = new ArrayList<>();
+        Queue<Integer> bridgeQueue = new ArrayDeque<>();
+        Queue<Integer> waitQueue = new ArrayDeque<>();
 
         for (int i: truck_weights) {
-            queue1.add(i);
+            waitQueue.add(i);
         }
         int sum = 0;
-        while (!queue.isEmpty() || !queue1.isEmpty()){
+        while (!waitQueue.isEmpty()){
             answer++;
-            if(queue.size() < bridge_length){
+            if(bridgeQueue.size() < bridge_length){
+                if(sum + waitQueue.peek() <= weight){
+                    sum += waitQueue.peek();
+                    bridgeQueue.add(waitQueue.poll());
 
-                queue.offer(queue1.get(0));
+                }else{
+                    bridgeQueue.add(0);
+                }
+            }else{
+                sum -= bridgeQueue.poll();
+                if(sum + waitQueue.peek() < weight){
+                    sum += waitQueue.peek();
+                    bridgeQueue.add(waitQueue.poll());
 
+                }else{
+                    bridgeQueue.add(0);
+                }
             }
         }
-
-        return answer;
+        bridgeQueue.size();
+        return answer + bridge_length;
     }
 
     public static void main(String[] args) {
         BridgeTruck bridgeTruck = new BridgeTruck();
-        bridgeTruck.solution(2,10,new int[]{7,4,5,6});
+        bridgeTruck.solution(100,100,new int[]{10,10,10,10,10,10,10,10,10,10});
     }
 }

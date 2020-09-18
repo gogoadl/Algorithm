@@ -6,14 +6,19 @@ public class BestAlbum {
     public int[] solution(String[] genres, int[] plays) {
         int[] answer = {};
 
-        HashMap<Integer,String> ghashMap = new HashMap();
-        HashMap<Integer,Integer> phashMap = new HashMap();
+        HashMap<Integer,String> genreHashMap = new HashMap();
+        HashMap<Integer,Integer> playsHashMap = new HashMap();
+        
         for (int i = 0; i < genres.length; i++) {
-            ghashMap.put(i,genres[i]);
-            phashMap.put(i,plays[i]);
+            genreHashMap.put(i,genres[i]);
+            playsHashMap.put(i,plays[i]);
         }
 
+        for (int i: playsHashMap.values()) {
+            System.out.print(i);
+        }
 
+        genreHashMap.size();
         return answer;
     }
     public static void main(String[] args) {
