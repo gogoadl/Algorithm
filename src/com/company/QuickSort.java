@@ -1,9 +1,10 @@
 package com.company;
 
 public class QuickSort {
+
     public static void quick_sort(int[] arr, int left, int right)
     {
-        if(left < right)
+        if(left < right) //
         {
             int pi = partition(arr, left, right);
 
@@ -45,5 +46,6 @@ public class QuickSort {
 //        { arr[i] = (int)Math.random() * 100; }
 
         quick_sort(arr, 0, arr.length - 1);
+        int a =5;
     }
 }
