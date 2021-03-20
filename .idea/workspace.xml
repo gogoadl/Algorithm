@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c8adcef-e631-4b16-82d5-b48d2bc82f2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/JoyStick.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/BinaryChange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/FindDecimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/FindDecimal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,20 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
-  <component name="RunManager" selected="Application.FindDecimal">
+  <component name="RunManager" selected="Application.BinaryChange">
+    <configuration name="BinaryChange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.BinaryChange" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FindDecimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.FindDecimal" />
       <module name="Algorithm" />
@@ -91,19 +103,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice22" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Practice22" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Practice23" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Practice23" />
       <module name="Algorithm" />
@@ -119,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinaryChange" />
         <item itemvalue="Application.FindDecimal" />
         <item itemvalue="Application.JoyStick" />
         <item itemvalue="Application.IntTriangle" />
         <item itemvalue="Application.Practice23" />
-        <item itemvalue="Application.Practice22" />
       </list>
     </recent_temporary>
   </component>
@@ -240,6 +239,26 @@
           <url>file://$PROJECT_DIR$/src/com/company/FindDecimal.java</url>
           <line>25</line>
           <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/BinaryChange.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/BinaryChange.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/BinaryChange.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/BinaryChange.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
