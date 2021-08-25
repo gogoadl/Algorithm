@@ -1,2 +1,10 @@
 .idea/codeStyles
 
+lib/*
+
+out/production/Algorithm/*
+
+.idea/*
+
+Algorithm.iml
+
