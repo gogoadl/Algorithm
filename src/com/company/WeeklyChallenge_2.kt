@@ -18,8 +18,8 @@ class WeeklyChallenge_2 {
             {
                 if (i == j)
                 {
-                    if (rotatedScores[i][j] == rotatedScores[j].min() ||
-                            rotatedScores[i][j] == rotatedScores[j].max())
+                    if (rotatedScores[i][j] == rotatedScores[j].minOrNull() ||
+                            rotatedScores[i][j] == rotatedScores[j].maxOrNull())
                     {
                         var countOfSameVal = rotatedScores[i].filter { it.equals(rotatedScores[i][j])}
                         if (countOfSameVal.size < 2) {
