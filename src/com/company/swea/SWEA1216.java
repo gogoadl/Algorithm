@@ -41,7 +41,7 @@ public class SWEA1216 {
                     }
                 }
                 for (int cnt = 3; cnt < xString.length(); cnt++) {
-                    for (int start = 0; start < xString.length() - cnt; start++) {
+                    for (int start = 0; start <= xString.length() - cnt; start++) {
                         int end = start + cnt - 1;
                         if(xPalindrome[start + 1][end - 1] && xString.charAt(start) == xString.charAt(end)) {
                             xPalindrome[start][end] = true;
@@ -62,7 +62,7 @@ public class SWEA1216 {
                     }
                 }
                 for (int cnt = 3; cnt < yString.length(); cnt++) {
-                    for (int start = 0; start < yString.length() - cnt; start++) {
+                    for (int start = 0; start <= yString.length() - cnt; start++) {
                         int end = start + cnt - 1;
                         if(yPalindrome[start + 1][end - 1] && yString.charAt(start) == yString.charAt(end)) {
                             yPalindrome[start][end] = true;
