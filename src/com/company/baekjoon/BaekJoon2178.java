@@ -19,18 +19,29 @@ public class BaekJoon2178 {
             visited[x+1][y] = true;
             count++;
             dfs(graph, visited, x+1, y, N, M);
-        } else if (x != 0 && graph[x-1][y] != 0 && !visited[x-1][y]) {
+            visited[x+1][y] = false;
+            count--;
+        }
+        if (x != 0 && graph[x-1][y] != 0 && !visited[x-1][y]) {
             visited[x-1][y] = true;
             count++;
             dfs(graph, visited, x-1, y, N, M);
-        } else if (y != M-1 && graph[x][y+1] != 0 && !visited[x][y+1]) {
+            visited[x-1][y] = false;
+            count--;
+        }
+        if (y != M-1 && graph[x][y+1] != 0 && !visited[x][y+1]) {
             visited[x][y+1] = true;
             count++;
             dfs(graph, visited, x, y+1, N, M);
-        } else if (y != 0 && graph[x][y-1] != 0 && !visited[x][y-1]) {
+            visited[x][y+1] = false;
+            count--;
+        }
+        if (y != 0 && graph[x][y-1] != 0 && !visited[x][y-1]) {
             visited[x][y-1] = true;
             count++;
             dfs(graph, visited, x, y-1, N, M);
+            visited[x][y-1] = false;
+            count--;
         }
     }
     public static void main(String[] args) throws IOException {
