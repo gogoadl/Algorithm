@@ -1,36 +1,55 @@
 package com.company.swea;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.IOException;
 
 public class SWEA2806 {
-    // 퀸은 상하좌우 대각선으로 이동 가능.
-    // N * N 보드에서 N개의 퀸을 서로 공격하지 못하게 놓는 수를 구하기.
-
-    // (0,0) 부터 차례대로 탐색 시작.
-    // 보드크기와 동일한 boolean 2차원배열 생성
-    // 좌표의 상, 하, 좌, 우, 대각선 위치를 boolean 배열에서 모두 체크함 (true로 변환)
-    // 다음 사용가능한 좌표를 boolean 변수를 통해 탐색 후 동일한 작업 수행.
-
+    public static int[] arr;
+    public static int N;
+    public static int count = 0;
+    public static void nQueen(int depth) {
+        // 모든 원소를 다 채운 상태면 count 증가 및 return
+        if (depth == N) {
+            count++;
+            return;
+        }
+        for (int i = 0; i < N; i++) {
+            arr[depth] = i;
+            // 놓을 수 있는 위치일 경우 재귀호출
+            if (Possibility(depth)) {
+                nQueen(depth + 1);
+            }
+        }
+    }
+    public static boolean Possibility(int col) {
+        for (int i = 0; i < col; i++) {
+            // 해당 열의 행과 i열의 행이 일치할경우 (같은 행에 존재할 경우)
+            if (arr[col] == arr[i]) {
+                return false;
+            }
+            /*
+             * 대각선상에 놓여있는 경우
+             * (열의 차와 행의 차가 같을 경우가 대각선에 놓여있는 경우다)
+             */
+            else if (Math.abs(col - i) == Math.abs(arr[col] - arr[i])) {
+                return false;
+            }
+        }
+        return true;
+    }
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
-
         int testCaseCount = Integer.parseInt(br.readLine());
+
         for (int i = 1; i <= testCaseCount; i++) {
-            int answer = 0;
-            int count = 0;
-            boolean[][] booleans = new boolean[i][i];
-
-            for (int j = 0; j < i; j++) {
-                for (int k = 0; k < i; k++) {
-                    
-                }
-            }
-
-
-            sb.append(String.format("#%d %d", i, answer));
+            N = Integer.parseInt(br.readLine());
+            arr = new int[N];
+            count = 0;
+            nQueen(0);
+            sb.append(String.format("#%d %d\n", i, count));
         }
+        System.out.println(sb);
     }
 }
