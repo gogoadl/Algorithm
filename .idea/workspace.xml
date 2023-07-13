@@ -20,9 +20,81 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c8adcef-e631-4b16-82d5-b48d2bc82f2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/Level3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Phoneketmon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/AnalyzerException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/BaekJoon1003.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/BaekJoon15953.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/BestAlbum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/BinaryChange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/BinarySearchTree$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/BinarySearchTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/BridgeTruck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/BruteForceSearch1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Camouflage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Carpet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Crane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/DFSBFS1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/FindDecimal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/FindDestinationGame$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/FindDestinationGame$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/FindDestinationGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/FineRectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/FunctionDevelop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/HIndex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/IntTriangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/JadenCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/JimSsa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/JoyStick.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/JumpAndTeleport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Lexer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/LifeBoat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/MaxNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/MoreSpicy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Nation124.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Network.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/PhoneBook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Phoneketmon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice20.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice21.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice22.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice23.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice24.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice25.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Practice9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Printer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/QuickSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/SkillCheck1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/SkillTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Sort1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/StockPrice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/TargetNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/TokenType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Top.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Top1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/TraningSuit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/TravelPath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/Year2016.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/com/company/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/company/TMaxGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/company/TMaxGroup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
