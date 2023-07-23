@@ -10,37 +10,39 @@ public class BaekJoon5397 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
         int testCaseCount = Integer.parseInt(br.readLine());
-        Stack<Character> lStack = new Stack<Character>();
-        Stack<Character> rStack = new Stack<Character>();
-
+        Stack<Character> temp = new Stack<>();
+        Stack<Character> result = new Stack<>();
         for (int i = 0; i < testCaseCount; i++) {
             String input = br.readLine();
             for (int j = 0; j < input.length(); j++) {
                 char c = input.charAt(j);
-                if (c == '<') {
-                    if (!rStack.isEmpty())
-                        lStack.push(rStack.pop());
-                } else if (c == '>') {
-                    if (!lStack.isEmpty())
-                        rStack.push(lStack.pop());
-                } else if  (c == '-') {
-                    if (!rStack.isEmpty())
-                        rStack.pop();
+                if (c == '>') {
+                    if (!temp.isEmpty()) {
+                        result.push(temp.pop());
+                    }
+                } else if (c == '<') {
+                    if (!result.isEmpty()) {
+                        temp.push(result.pop());
+                    }
+                } else if (c == '-') {
+                    if (!result.isEmpty()) {
+                        result.pop();
+                    }
                 } else {
-                    rStack.push(c);
+                    result.push(c);
                 }
             }
-            while (!lStack.isEmpty()) {
-                rStack.push(lStack.pop());
+            while (!temp.isEmpty()) {
+                result.push(temp.pop());
             }
-            for (int j = 0; j < rStack.size(); j++) {
-                sb.append(rStack.elementAt(j));
+            for (int j = 0; j < result.size(); j++) {
+                sb.append(result.elementAt(j));
             }
-
             System.out.println(sb);
             sb.setLength(0);
-            lStack.clear();
-            rStack.clear();
+            temp.clear();
+            result.clear();
         }
+
     }
 }
