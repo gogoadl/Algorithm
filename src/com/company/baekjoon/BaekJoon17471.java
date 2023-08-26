@@ -6,9 +6,9 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 public class BaekJoon17471 {
-    // 1. dfs 수행할 때 마다 visit 되지 않은 배열들의 목록과 비교 해야함.
-    // 2. visit 되지 않은 배열들의 depth와 dfs 수행 depth 의 합이 N이 되어야 함. (모든 노드가 탐색 되어야 함)
-    // 3. bfs 방문 배열의 값과 dfs 방문 배열의 값을 구해서 뺀 값의 최소값이 결과가 되어야 함.
+    // 1. combi 실행하여 조합 구하기
+    // 2. 생성해낸 조합 중 같은 플래그 끼리 모두 인접한지 확인
+    // 3. 같은 플래그 끼리 모두 인접해있다면 차이와 최소값을 비교
 
     static int[][] graph;
     static int[] value;
