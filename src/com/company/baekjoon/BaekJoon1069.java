@@ -18,9 +18,10 @@ public class BaekJoon1069 {
         double dist = Math.sqrt(X*X+Y*Y); // (X,Y) - (0,0) 사이의 직선 거리
         double result = dist;
 
+        // 점프 이동거리가 점프에 걸리는 시간보다 작다면, 걷는 것이 더 효율적이다.
         if (T > D) { // 걷는 경우
             System.out.println(dist + "\n");
-        } else {
+        } else { // 점프를 사용하는 경우
             int jump = (int) dist / D; // 점프 횟수
 
             double time = dist - D * jump;
