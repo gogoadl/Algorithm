@@ -76,23 +76,22 @@ public class BaekJoon20056 {
     public static void divide() {
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
-                if (graph[i][j].size() == 1)
+                if (graph[i][j].size() < 2) { // 이동 후 좌표에 파이어볼이 1개라면 삭제
                     graph[i][j].clear();
-
-                if (graph[i][j].size() < 2)
                     continue;
+                }
 
                 int massSum = 0;
                 int aSum = 0;
 
-                boolean even = graph[i][j].get(0).d % 2 == 0 ? true : false;
-                boolean odd = graph[i][j].get(0).d % 2 == 1 ? true : false;
+                boolean even = graph[i][j].get(0).d % 2 == 0;
+                boolean odd = graph[i][j].get(0).d % 2 == 1;
 
                 for (FireBall fireBall: graph[i][j]) {
                     massSum += fireBall.m;
                     aSum += fireBall.s;
-                    even = even & fireBall.d % 2 == 0 ? true : false;
-                    odd = odd & fireBall.d % 2 == 1 ? true : false;
+                    even = even & fireBall.d % 2 == 0;
+                    odd = odd & fireBall.d % 2 == 1;
                     fireBalls.remove(fireBall);
                 }
                 int newMass = massSum / 5;
