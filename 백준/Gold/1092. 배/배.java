@@ -37,6 +37,9 @@ public class Main {
             for (int i = 0; i < cranes.size(); i++) {
                 int val = cranes.get(i);
                 if (baggages.isEmpty()) break;
+                if  (val < baggages.get(baggages.size()-1)) {
+                    break;
+                }
                 for (int j = 0; j < baggages.size(); j++) {
                     int bag = baggages.get(j);
                     if (bag <= val) {
