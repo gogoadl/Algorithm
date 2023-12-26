@@ -1,44 +1,56 @@
-import javafx.util.Pair;
-import java.util.Comparator;
-import java.util.PriorityQueue;
+import java.util.LinkedList;
+import java.util.Queue;
 
 class Solution {
-    public int solution(String begin, String target, String[] words) {
-        int answer = 0;
-        PriorityQueue<Pair<String,Integer>> queue = new PriorityQueue<>(new Comparator<Pair<String, Integer>>() {
-            @Override
-            public int compare(Pair<String, Integer> o1, Pair<String, Integer> o2) {
-                return o1.getValue() - o2.getValue();
-            }
-        });
-        boolean isContain = false;
-        for (String word:
-             words) {
-            if (word.equals(target)) {
-                isContain = true;
-            }
+
+    static class Node {
+        String next;
+        int edge;
+
+        public Node(String next, int edge) {
+            this.next = next;
+            this.edge = edge;
         }
-        if (!isContain)
-            return 0;
-        queue.add(new Pair<>(begin, 0));
-        while (true) {
-            Pair<String, Integer> p = queue.poll();
-            if (p.getKey().equals(target)) {
-                answer = p.getValue();
+    }
+
+    public int solution(String begin, String target, String[] words) {
+        int n = words.length, ans = 0;
+
+        // for (int i=0; i<n; i++)
+        //  if (words[i] != target && i == n-1) return 0;
+
+        Queue<Node> q = new LinkedList<>();
+
+
+        boolean[] visit = new boolean[n];
+        q.add(new Node(begin, 0));
+
+        while(!q.isEmpty()) {
+            Node cur = q.poll();
+            if (cur.next.equals(target)) {
+                ans = cur.edge;
                 break;
             }
-            for (int i = 0; i < words.length; i++) {
-                int diff = 0;
-                for (int j = 0; j < p.getKey().length(); j++) {
-                    if (words[i].charAt(j) != p.getKey().charAt(j)) {
-                        diff++;
-                    }
-                }
-                if (diff == 1) {
-                    queue.add(new Pair<>(words[i], p.getValue()+1));
+
+            for (int i=0; i<n; i++) {
+                if (!visit[i] && isNext(cur.next, words[i])) {
+                    visit[i] = true;
+                    q.add(new Node(words[i], cur.edge + 1));
                 }
             }
         }
-        return answer;
+
+        return ans;
     }
+
+    static boolean isNext(String cur, String n) {
+        int cnt = 0;
+        for (int i=0; i<n.length(); i++) {
+            if (cur.charAt(i) != n.charAt(i)) {
+                if (++ cnt > 1) return false;
+            }
+        }
+
+        return true;
+    }    
 }
