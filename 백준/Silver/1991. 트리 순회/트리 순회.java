@@ -8,10 +8,10 @@ public class Main {
         void createNode(String data, String leftData, String rightData) {
             if (root == null) {
                 root = new Node(data);
-                if (leftData != null) {
+                if (!leftData.equals(".")) {
                     root.left = new Node(leftData);
                 }
-                if (rightData != null) {
+                if (!rightData.equals(".")) {
                     root.right = new Node(rightData);
                 }
             } else {
@@ -22,10 +22,10 @@ public class Main {
             if (node == null) {
                 return;
             } else if (node.data.equals(data)) {
-                if (leftData != null) {
+                if (!leftData.equals(".")) {
                     node.left = new Node(leftData);
                 }
-                if (rightData != null) {
+                if (!rightData.equals(".")) {
                     node.right = new Node(rightData);
                 }
             } else {
@@ -33,25 +33,25 @@ public class Main {
                 searchNode(node.right, data, leftData, rightData);
             }
         }
-        void preOrder(Node node) {
+        void preOrder(Node node, StringBuilder sb) {
             if (node != null) {
-                System.out.print(node.data);
-                preOrder(node.left);
-                preOrder(node.right);
+                sb.append(node.data);
+                preOrder(node.left, sb);
+                preOrder(node.right, sb);
             }
         }
-        void inOrder(Node node) {
+        void inOrder(Node node, StringBuilder sb) {
             if (node != null) {
-                if (node.left != null) inOrder(node.left);
-                System.out.print(node.data);
-                if (node.right != null) inOrder(node.right);
+                if (node.left != null) inOrder(node.left, sb);
+                sb.append(node.data);
+                if (node.right != null) inOrder(node.right, sb);
             }
         }
-        void postOrder(Node node) {
+        void postOrder(Node node,StringBuilder sb) {
             if (node != null) {
-                if (node.left != null) postOrder(node.left);
-                if (node.right != null) postOrder(node.right);
-                System.out.print(node.data);
+                if (node.left != null) postOrder(node.left, sb);
+                if (node.right != null) postOrder(node.right, sb);
+                sb.append(node.data);
             }
         }
     }
@@ -74,16 +74,14 @@ public class Main {
             String value = st.nextToken();
             String lValue = st.nextToken();
             String rValue = st.nextToken();
-            if (lValue.equals("."))
-                lValue = null;
-            if (rValue.equals("."))
-                rValue = null;
             tree.createNode(value, lValue, rValue);
         }
-        tree.preOrder(tree.root);
-        System.out.println("");
-        tree.inOrder(tree.root);
-        System.out.println("");
-        tree.postOrder(tree.root);
+        StringBuilder sb = new StringBuilder();
+        tree.preOrder(tree.root, sb);
+        sb.append("\n");
+        tree.inOrder(tree.root, sb);
+        sb.append("\n");
+        tree.postOrder(tree.root, sb);
+        System.out.println(sb);
     }
 }
