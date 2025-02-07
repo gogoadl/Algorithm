@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.math.BigInteger;
 import java.util.StringTokenizer;
 
 public class Main {
@@ -10,8 +11,7 @@ public class Main {
         int N = Integer.parseInt(st.nextToken());
         long[] node = new long[N];
         long[] edge = new long[N-1];
-        long[][]arr = new long[N-1][N-1];
-        long cost = 0;
+        BigInteger cost = BigInteger.valueOf(0);
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < N-1; i++) {
             edge[i] = Integer.parseInt(st.nextToken());
@@ -25,7 +25,7 @@ public class Main {
             if (node[i] < minCost) {
                 minCost = node[i];
             }
-            cost += minCost * edge[i];
+            cost = cost.add(BigInteger.valueOf(minCost * edge[i]));
         }
         System.out.println(cost);
     }
